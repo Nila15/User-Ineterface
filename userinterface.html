@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Interface</title>
+
+    <style>
+        .body{
+            font-family: sans-serif;
+            padding-left: 118px;
+            height: 24px;
+            top: 20px;
+            font-size: 20px;
+            line-height: 24px;
+            color: #2f3136;
+        }
+
+        .sidebar{
+            position: absolute;
+            width: 68px;
+            height: 1027px;
+            top: 0;
+            left: 0;
+            background-color: #1A0931;
+        }
+
+        p{
+            position: absolute;
+            width: 282px;
+            height: 16px;
+            left: 12px;
+            right: 12px;
+            top: 12px;
+            bottom: 312px;
+            font-family: sans-serif;
+            font-style: normal;
+            font-weight: 400px;
+            font-size: 12px;
+            line-height: 20px;
+            display: flex;
+            align-items: center;
+            color: #5D6372;
+        }
+
+        h1{
+            padding-left: 118px;
+            height: 24px;
+            top: 20px;
+            font-size: 20px;
+            line-height: 24px;
+            color: #2f3136;
+            font-family: sans-serif;
+        }
+
+        h2{
+            position: absolute;
+            width: 250px;
+            height: 40px;
+            left: 16px;
+            right: 16px;
+            top: 0px;
+            bottom: 60px;
+            font-family:sans-serif;
+            font-size: 14px;
+            line-height: 20px;
+            color: #2F3136;
+        }
+
+        h3{
+            position: absolute;
+            width: 282px;
+            height: 20px;
+            left: 12px;
+            right: 12px;
+            top: 32px;
+            bottom: 288px;
+            font-family: sans-serif;
+            font-size: 14px;
+            line-height: 20px;
+            color: #5D6372;
+        }
+
+        h4{
+            position: absolute;
+            height: 16px;
+            left: 40px;
+            right: 16px;
+            top: 70px;
+            bottom: 16px;
+            font-family: sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            color: #5D6372; 
+        }
+
+        h5{             
+            width: 105px;
+            height: 20px;
+            top: 376px;
+            bottom: 12px;
+            left: 36px;
+            right: 165px;
+            font-family: sans-serif;
+            font-style: normal;
+            font-weight: 400px;
+            font-size: 14px;
+            line-height: 20px;
+            color: #2F3136;
+        }
+
+        .card{
+            position: absolute;
+            width: 306px;
+            height: 340px;
+            left: 118px;
+            top: 68px;
+            background-color:#FEFEFF;
+            border: 1px solid #F2F2F4;
+            font-family: sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 20px;
+            display: flex;
+            align-items: center;
+            color: #5D6372;
+        }
+
+        .flex-container{
+            position: absolute;
+            left: 12px;
+            right: 12px;
+            top: 68px;
+            bottom: 156px;
+            background-color:#FFFFFF;
+            border: 1px solid #E4E4E8;
+            border-radius: 4px;
+        }
+
+        .flex-container2{
+            position: absolute;
+            left: 12px;
+            right: 12px;
+            top: 196px;
+            bottom: 48px;
+            background-color:#FFFFFF;
+            border: 1px solid #E4E4E8;
+            border-radius: 4px;
+        }
+
+        .card2{
+            position: absolute;
+            width: 306px;
+            height: 148px;
+            left: 440px;
+            top: 68px;
+            background:#FFFFFF;
+            border: 1px solid #F2F2F4;
+            border-radius: 4px;
+        }
+
+        .card3{
+            position: absolute;
+            width: 306px;
+            height: 232px;
+            left: 762px;
+            top: 68px;
+            background:#FFFFFF;
+            border: 1px solid #F2F2F4;
+            border-radius: 4px;
+        }
+
+        .flex-container3{
+            position: absolute;
+            left: 12px;
+            right: 12px;
+            top: 68px;
+            bottom: 48px;
+            background: #FFFFFF;
+            border: 1px solid #E4E4E8;
+            border-radius: 4px;
+        }
+
+        .card4{
+            position: absolute;
+            width: 306px;
+            height: 232px;
+            left: 1084px;
+            top: 68px;
+            background: #FFFFFF;
+            border: 1px solid #F2F2F4;
+            border-radius: 4px;
+        }
+
+        .flex-container4{
+            position: absolute;
+            left: 12px;
+            right: 12px;
+            top: 68px;
+            bottom: 48px;
+            background:#FFFFFF;
+            border: 1px solid #E4E4E8;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="sidebar">
+        <img src="logo.png" width="30px" height="30px" style="margin-left: 15px; margin-top: 20px;">
+    </div>
+
+    <div class="main">
+        <h1>Product map</h1>
+        <div class="card">
+            <p>Q1 2019</p>
+            <h3>January-March</h3>
+            <div class="flex-container">
+                <h2>Re-designed the zero-g doggie bags.</br> No more spills!</h2>
+                <h4>64% </h4>
+                <img src="weight.png" width="15px" height="15px" style="margin-left: 20px; margin-top: 50px;">
+                <img src="more-grey.png" width="25px" height="20px" style="margin-left: 200px; margin-top: 80px;">
+               
+            </div>
+            <p style="margin-top: 300px; margin-left:20px; font-size: 15px;" >Create new task</p>
+            <img src="plus - purple.png" width="20px" height="20px" style="margin-left: 10px; margin-top: 300px;">
+            <div class="flex-container2">
+                <h2>Travel & Relocation Support</h2>
+                <h4 style="margin-top: -5px;">12%</h4>
+                <img src="weight.png" width="15px" height="15px" style="margin-left: 20px; margin-top: 65px;">
+                <img src="more-grey.png" width="25px" height="20px" style="margin-left: 200px; margin-top: 0px;">
+            </div>
+           
+        </div>
+        <div class="card2">
+            <p>Q2 2019</p>
+            <h3>April-June</h3>
+            <p font-color="#B7BDC9" style="margin-top:80px">No Task Avaliable</p>
+            <p style="margin-top: 110px; margin-left: 20px; font-size: 15px;" >Create new task</p>
+            <img src="plus - purple.png" width="20px" height="20px" style="margin-left: 7px; margin-top: 120px;">
+        </div>
+        <div class="card3">
+            <p>Q3 2019</p>
+            <h3>July-September</h3>
+            <div class="flex-container3">
+                <h2>Bundle interplanetary analytics for improved transmission</h2>
+                <h4>90%</h4>
+                <img src="weight.png" width="15px" height="15px" style="margin-left: 20px; margin-top: 75px;">
+                <img src="more-grey.png" width="25px" height="20px" style="margin-left: 200px; margin-top: 80px;">
+            </div>
+            <p style="margin-top: 190px; margin-left: 20px; font-size: 15px;" >Create new task</p>
+            <img src="plus - purple.png" width="20px" height="20px" style="margin-left: 10px; margin-top: 200px;">
+            
+        </div>
+        <div class="card4">
+            <p>Q4 2019</p>
+            <h3>October-December</h3>
+            <div class="flex-container4">
+                <h2>Data Migration: Performance & Culture End Game</h2>
+                <h4>63%</h4>
+                <img src="weight.png" width="15px" height="15px" style="margin-left: 20px; margin-top: 75px;">
+                <img src="more-grey.png" width="25px" height="20px" style="margin-left: 200px; margin-top: 80px;">
+            </div>
+            <p style="margin-top: 190px; margin-left: 20px; font-size: 15px;" >Create new task</p>
+            <img src="plus - purple.png" width="20px" height="20px" style="margin-left: 10px; margin-top: 200px;">
+        </div>
+    </div>
+</body>
+</html>
